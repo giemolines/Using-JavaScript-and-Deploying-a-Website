@@ -262,31 +262,32 @@ body {
     - all form input, textarea, and and button elements will have the same font as the rest of the page, a line-height of 24px, a font-size of 16px, and the same border as other buttons on the site. There will be 24px of space below each of these elements.
     - the edges of the button will line up exactly with the text-area element. HINT: time for some math!
 */
-
-
-
-.contact main {
+main#contact-page.contact {
     height: 420px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
-.contact-columns {
+.contact-form {
     display: flex;
+    justify-content: center;
     align-items: flex-start;
-    justify-content: center; /* Changed to center */
-    width: 450px; /* Adjusted width */
-    margin: 0 auto; /* Centered horizontally */
+    width: 474px;
+    margin-top: 24px;
 }
 
-.contact-columns label {
+.contact-form label {
     width: 150px;
     text-align: right;
     margin-right: 24px;
 }
 
-.contact-columns input[type="text"], .contact-columns textarea, .contact-columns button {
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea,
+.contact-form button {
     font-family: 'Montserrat', sans-serif;
     line-height: 24px;
     font-size: 16px;
@@ -296,14 +297,14 @@ body {
     padding: 5px;
 }
 
-.contact-columns textarea {
+.contact-form textarea {
     height: 150px;
     padding: 5px;
 }
 
-.contact-columns button {
-    margin-top: 24px;
-    padding: 5px;
+.contact-form button {
+    margin-top: 0;
+    padding: 10px 15px;
     border: 1px solid #000;
     background-color: #E5AF42;
     color: #000;
