@@ -1,16 +1,16 @@
 /********* create variables *********/
-let dailyRate = 35;
-let dayCounter = 0;
-let totalCost = 0;
-const dayButtons = document.querySelectorAll('.day-selector li');
-const fullButton = document.getElementById('full');
-const halfButton = document.getElementById('half');
-const calculatedCostElement = document.getElementById('calculated-cost');
-const clearButton = document.getElementById('clear-button');
+var dailyRate = 35;
+var dayCounter = 0;
+var totalCost = 0;
+var dayButtons = document.querySelectorAll('.day-selector li');
+var fullButton = document.getElementById('full');
+var halfButton = document.getElementById('half');
+var calculatedCostElement = document.getElementById('calculated-cost');
+var clearButton = document.getElementById('clear-button');
 
 /********* colour change days of week *********/
-dayButtons.forEach(button => {
-    button.addEventListener('click', () => {
+dayButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
         if (!button.classList.contains('clicked')) {
             button.classList.add('clicked');
             dayCounter++;
@@ -20,8 +20,8 @@ dayButtons.forEach(button => {
 });
 
 /********* clear days *********/
-clearButton.addEventListener('click', () => {
-    dayButtons.forEach(button => {
+clearButton.addEventListener('click', function() {
+    dayButtons.forEach(function(button) {
         button.classList.remove('clicked');
     });
     dayCounter = 0;
@@ -30,14 +30,14 @@ clearButton.addEventListener('click', () => {
 });
 
 /********* change rate *********/
-halfButton.addEventListener('click', () => {
+halfButton.addEventListener('click', function() {
     dailyRate = 20;
     halfButton.classList.add('clicked');
     fullButton.classList.remove('clicked');
     calculateTotalCost();
 });
 
-fullButton.addEventListener('click', () => {
+fullButton.addEventListener('click', function() {
     dailyRate = 35;
     fullButton.classList.add('clicked');
     halfButton.classList.remove('clicked');
