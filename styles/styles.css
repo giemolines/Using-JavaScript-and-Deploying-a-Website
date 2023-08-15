@@ -1,0 +1,244 @@
+/************* site defaults *************/
+body {
+    width: 950px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/************* site-wide text styling *************/
+
+h1 {
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 12px;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 12px;
+    line-height: 36px; /* Added line-height */
+}
+
+.large-text {
+    font-size: 24px;
+}
+
+.fake-button {
+    display: block;
+    margin: 0 auto 150px;
+    background-color: #E5AF42;
+    text-align: center;
+    line-height: 3;
+    border: 1px solid #000;
+    padding: 5px 15px;
+    color: #000;
+    text-decoration: none;
+    width: 250px; /* Adjusted width */
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+main a, footer a {
+    text-decoration: underline;
+}
+
+.fake-button:hover, .blue-hover:hover {
+    text-decoration: underline;
+    background-color: #4278e5;
+    color: #fff;
+    cursor: pointer;
+}
+
+/************* header/footer styling *************/
+
+header, footer {
+    background-color: #E5AF42;
+}
+
+header {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    margin: 25px 25px 25px 0;
+}
+
+main {
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+footer {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 200;
+}
+
+/************* index page *************/
+
+.index .flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.about-us {
+    width: calc(100% - 325px);
+
+}
+
+.about-us h2{
+    padding-bottom: 12px;
+}
+
+.index img {
+    width: 300px;
+    margin-left: 25px;
+    margin-bottom: 50px;
+}
+
+.index h2 {
+    line-height: 36px;
+}
+
+.index p {
+    margin-bottom: 12px;
+}
+
+.index .flex:last-child {
+    justify-content: center;
+}
+
+/************* bookings page *************/
+
+/* Bookings Page Styling */
+.booking-page {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    width: 600px;
+}
+
+.booking-page h2 {
+    font-size: 36px;
+    padding: 12px;
+}
+
+.day-selector {
+    margin-bottom: 12px;
+}
+
+.day-selector li {
+    display: inline-block;
+    width: 60px;
+    margin: 0 20px;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+.small-button {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #000;
+    margin: 5px;
+    text-align: center;
+    width: 50px;
+    padding: 5px; /* Added padding */
+}
+
+.top-margin {
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.clicked {
+    background-color: #E5AF42;
+}
+
+.clear-button {
+    width: 200px;
+}
+
+/* Center all items within their available space */
+.booking-page * {
+    margin: 0 auto;
+}
+
+/************* contact page *************/
+
+.contact main {
+    height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-columns {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center; /* Changed to center */
+    width: 450px; /* Adjusted width */
+    margin: 0 auto; /* Centered horizontally */
+}
+
+.contact-columns label {
+    width: 150px;
+    text-align: right;
+    margin-right: 24px;
+}
+
+.contact-columns input[type="text"], .contact-columns textarea, .contact-columns button {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 24px;
+    font-size: 16px;
+    border: 1px solid #000;
+    margin-bottom: 24px;
+    width: 300px;
+    padding: 5px;
+}
+
+.contact-columns textarea {
+    height: 150px;
+    padding: 5px;
+}
+
+.contact-columns button {
+    margin-top: 24px;
+    padding: 5px;
+    border: 1px solid #000;
+    background-color: #E5AF42;
+    color: #000;
+    cursor: pointer;
+}
+
+/************* Remaining styles (not mentioned in the guidelines) *************/
+
+/* Reset some default browser styles */
+h1, h2, h3, p, ul, li, img {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
